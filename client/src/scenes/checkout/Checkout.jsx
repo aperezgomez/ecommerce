@@ -70,7 +70,7 @@ const checkoutSchema = [
 
 const Checkout = () => {
     const [activeStep, setActiveStep] = useState(0);
-    const cart = useSelector((state) => state.cart);
+    const cart = useSelector((state) => state.cart.cart);
     const isFirstStep = activeStep === 0;
     const isSecondStep = activeStep === 1;
 
